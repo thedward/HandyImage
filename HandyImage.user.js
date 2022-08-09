@@ -636,7 +636,7 @@
 // @match		http://*.imgskull.xyz/image/*
 // @match		http://*.imgskull.com/image/*
 // @match		*://*.ninjaimages.com/*.html
-// @match		*://*.imgprime.com/img*
+// @match		*://*.imgprime.com/*
 // @match		*://*.imgmaze.pw/*.php
 // @match		*://*.mazpic.com/*.php
 // @match		*://*.piccash.net/*/*/
@@ -1846,6 +1846,11 @@ function makeworld()
 		else if(window.location.href.indexOf("/imgb-u/") != -1)
 		{
 			i = q('img[src*="/u/b/"]');
+			break;
+		}
+		else if(window.location.href.indexOf("/x-o/") != -1)
+		{
+			i.src = window.location.href.replace(/\/x-o\/(.*\.jpe?g)\.html/,"/o/$1");
 			break;
 		}
 	case "freeimagehosting.net":
