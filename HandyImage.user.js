@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name		Handy Image
-// @version		2022.09.08t
+// @version		2022.09.08u
 // @author		Owyn
 // @contributor	ubless607, bitst0rm
 // @namespace	handyimage
@@ -1851,7 +1851,6 @@ function makeworld()
 		else if(window.location.href.indexOf("/x-o/") != -1)
 		{
 			i = { src: window.location.href.replace(/\/x-o\/(.*\.jpe?g)\.html/,"/o/$1") } ;
-			alert(i.src);
 			break;
 		}
 	case "freeimagehosting.net":
