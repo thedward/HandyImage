@@ -1850,7 +1850,8 @@ function makeworld()
 		}
 		else if(window.location.href.indexOf("/x-o/") != -1)
 		{
-			i.src = window.location.href.replace(/\/x-o\/(.*\.jpe?g)\.html/,"/o/$1");
+			i = { src: window.location.href.replace(/\/x-o\/(.*\.jpe?g)\.html/,"/o/$1") } ;
+			alert(i.src);
 			break;
 		}
 	case "freeimagehosting.net":
